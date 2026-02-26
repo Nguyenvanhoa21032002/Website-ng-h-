@@ -3,8 +3,10 @@ const app = express();
 import routes from "./src/router.js";
 import connectionDB from "./src/connectDB.js";
 import dotenv from "dotenv";
+dotenv.config();
 import bodyParser from "body-parser";
 import cors from "cors";
+
 
 dotenv.config();
 connectionDB();
